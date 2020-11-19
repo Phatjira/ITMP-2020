@@ -1,0 +1,23 @@
+body{
+	background-color: #B3B3D9;
+}
+.bg{
+	padding-top: 50px;
+	text-align: center;
+	margin: auto;
+}
+.title{
+	background-color: #D0B3E1;
+	padding: 10px;
+	border-radius: 10px;
+	height: 100%;
+	width: 15%;
+	margin-left: 42%;
+}
+/*.mul{
+	background-color: #C0C0C0;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	width: 60%;
+}*/
