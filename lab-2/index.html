@@ -8,28 +8,54 @@
 </head>
 <body>
 	<div id="app">
-		
-	</div>
-	
+		About
+		<h3>Username {{person.username}}</h3>
+		<h3>Name {{person.name}}</h3>
+		<h3>email {{person.email}}</h3>
+		<h3>website {{person.website}}</h3>
+		<h3>company {{person.company.name}}</h3>
 
+		Users
+		<h2 v-for="u in users">{{u.username}}</h2>
+	</div>
 	<script>
 		fetch('https://jsonplaceholder.typicode.com/users')
 		.then(response => response.json())
-		.then(json => {console.log(json)})
+		.then(json => {
+			console.log(json)
+			app.users = json
+			app.person = json[0]
+		})
+
 		let app = new Vue({
 			el: '#app',
 			data: {
-				users :[],
-				person:{
-					id:0,
-					name:'..loading',
-					username:'..loading',
-					email:'..loading',
-					website:'..loading',
-					company:{
-						name : '..loading',
+				person : {
+					"id": 1,
+					"name": "....loding",
+					"username": "....loding",
+					"email": "....loding",
+					"website": "....loding",
+					"company": {
+						"name": "....loding",
+						"catchPhrase": "....loding",
+						"bs": "....loding"
 					}
-				}	
+				},
+				users : [
+				{
+					"id": 1,
+					"name": "....loding",
+					"username": "....loding",
+					"email": "....loding",
+					"website": "....loding",
+					"company": {
+						"name": "....loding",
+						"catchPhrase": "....loding",
+						"bs": "....loding"
+					}
+				}
+				]
 			}
 		})
 
