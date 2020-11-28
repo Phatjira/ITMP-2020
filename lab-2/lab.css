@@ -1,0 +1,19 @@
+body {
+    background-color: #FFF8DC;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.head{
+    font-size: 80px;
+    margin: 0;
+}
+
+.user{
+    font-size: 50px;
+    margin: 0;
+}
+
+.data:hover{
+    background-color: #FFDAB9;
+}

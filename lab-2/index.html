@@ -8,21 +8,57 @@
 </head>
 <body>
 	<div id="app">
-		About
+		<h2 class="head">About</h2>
 		<h3>Username {{person.username}}</h3>
 		<h3>Name {{person.name}}</h3>
 		<h3>email {{person.email}}</h3>
 		<h3>website {{person.website}}</h3>
 		<h3>company {{person.company.name}}</h3>
-
 		<button @click="isthisgood">คุณหน้าตาดีหรือไม่</button>
 		<h2>{{yesno.answer}}</h2>
 		<img :src="yesno.image" >
 
-		Users
-		<h2 v-for="u in users" :data-id="u.id" @click="viewBio(u)">
-			
-		{{u.username}}</h2>
+		<h2 class="users">Users</h2>
+		<h2 data-id="1" class="data">
+			<img src="http://picsum.photos/id/201/150/150" alt="">
+			Bret
+		</h2>
+		<h2 data-id="2" class="data">
+			<img src="http://picsum.photos/id/202/150/150" alt="">
+			Antonette
+		</h2>
+		<h2 data-id="3" class="data">
+			<img src="http://picsum.photos/id/203/150/150" alt="">
+			Samantha
+		</h2>
+		<h2 data-id="4" class="data">
+			<img src="http://picsum.photos/id/204/150/150" alt="">
+			Karianne
+		</h2>
+		<h2 data-id="5" class="data">
+			<img src="http://picsum.photos/id/305/150/150" alt="">
+			Kamren
+		</h2>
+		<h2 data-id="6" class="data">
+			<img src="http://picsum.photos/id/206/150/150" alt="">
+			Leopoldo_Corkery
+		</h2>
+		<h2 data-id="7" class="data">
+			<img src="http://picsum.photos/id/307/150/150" alt="">
+			Elwyn.Skiles
+		</h2>
+		<h2 data-id="8" class="data">
+			<img src="http://picsum.photos/id/208/150/150" alt="">
+			Maxime_Nienow
+		</h2>
+		<h2 data-id="9" class="data">
+			<img src="http://picsum.photos/id/209/150/150" alt="">
+			Delphine
+		</h2>
+		<h2 data-id="10" class="data">
+			<img src="http://picsum.photos/id/1010/150/150" alt="">
+			Moriah.Stanton
+		</h2>
 	</div>
 	<script>
 		fetch('https://jsonplaceholder.typicode.com/users')
